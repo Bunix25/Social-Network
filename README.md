@@ -119,7 +119,7 @@ If you would like to contribute to this project reach out to me. Contact Informa
 ## Questions ❓
 
 📩 If you have any question, email me here at : svattt7@gmail.com<br/>
-:octocat: My Github page is [Bunix25](https://github.com/)
+:octocat: My Github page is [Bunix25](https://github.com/Bunix25)
 
 ## Resourses 🙌
 
