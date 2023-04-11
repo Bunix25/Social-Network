@@ -89,7 +89,7 @@ On Insomnia, the following API routes have been created and used to add, update,
 
 ## License 📜
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 MIT License
 
 Copyright (c) 2023 Sviatoslav Zakharuk
