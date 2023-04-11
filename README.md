@@ -14,7 +14,7 @@ https://youtube.com/watch
 - [Technologies 🔧](#technologies-)
 - [Contribution 👩🏻‍💻](#contribution-)
 - [Questions ❓](#questions-)
-- [Credits 🙌](#credits-)
+- [Resourses 🙌](#Resourses-)
 
 ## Application Preview ⭐
 
