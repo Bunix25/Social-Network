@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/"
+    "url": "https://github.com/Bunix25/Social-Network"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/issues"
+    "url": "https://github.com/Bunix25/Social-Network/issues"
   },
-  "homepage": "https://github.com/readme",
+  "homepage": "https://github.com/Bunix25/Social-Network#readme",
   "dependencies": {
     "express": "^4.18.1",
     "moment": "^2.29.3",
