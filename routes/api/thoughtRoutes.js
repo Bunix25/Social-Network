@@ -1,5 +1,7 @@
+// Importing the Router object from the Express.js library
 const router = require('express').Router();
 
+// Importing the necessary functions from the thoughtController.js file
 const {
     getThought,
     getSingleThought,
@@ -10,23 +12,25 @@ const {
     deleteReaction
 } = require('../../controllers/thoughtController');
 
-// /api/thoughts GET all and POST thought
-router.route('/').get(getThought).post(createThought);
+// Defining the routes for handling GET and POST requests to '/api/thoughts'
+router.route('/')
+    .get(getThought) // GET all thoughts
+    .post(createThought); // POST a new thought
 
-// /api/thoughts/:thoughtId GET one thought, PUT and DELETE by iD
+// Defining the routes for handling GET, PUT, and DELETE requests to '/api/thoughts/:thoughtId'
 router.route('/:thoughtId')
-.get(getSingleThought)
-.put(updateThought)
-.delete(deleteThought);
+    .get(getSingleThought) // GET a single thought by ID
+    .put(updateThought) // PUT (update) a single thought by ID
+    .delete(deleteThought); // DELETE a single thought by ID
 
-//  /api/thoughts/:thoughtId/reactions POST new reactions
+// Defining the route for handling POST requests to '/api/thoughts/:thoughtId/reactions'
 router.route('/:thoughtId/reactions')
-.post(createReaction);
+    .post(createReaction); // POST a new reaction to a thought by ID
 
-// /api/thoughts/:thoughtId/reactions/:reactionId DELETE reaction by ID
+// Defining the route for handling DELETE requests to '/api/thoughts/:thoughtId/reactions/:reactionId'
 router.route('/:thoughtId/reactions/:reactionId')
-.delete(deleteReaction);
+    .delete(deleteReaction); // DELETE a reaction to a thought by ID
 
-
+// Exporting the router object to be used in other parts of the application
 module.exports = router;
 
