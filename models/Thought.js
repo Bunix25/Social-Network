@@ -2,7 +2,7 @@ const { Schema, model, Types } = require('mongoose');
 // import moment module to format the timestamp 
 const moment = require('moment')
 
-//reaction schema
+
 const reactionSchema = new Schema (
     {
        reactionId: {
@@ -33,7 +33,6 @@ const reactionSchema = new Schema (
     }
 )
 
-// thought schema
 const thoughtSchema = new Schema (
     {
       thoughtText: {
@@ -63,3 +62,13 @@ const thoughtSchema = new Schema (
 )
 
 
+// get total count of friends
+thoughtSchema.virtual('reactionCount')
+.get(function() {
+    return this.reactions.length;
+})
+
+// create the User model using the UserSchema
+const Thought = model('Thought', thoughtSchema);
+// export the Thought model
+module.exports = Thought;
